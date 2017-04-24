@@ -1,4 +1,4 @@
-# no need to check is sample data
-movie+set+01/*
-movie+set+02/*
-movie+set+03/*
+# no need to check in is sample data
+video_content/*
+# no need to commit working directory
+working/*
