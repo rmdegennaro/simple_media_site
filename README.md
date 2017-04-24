@@ -12,6 +12,6 @@ Not sure the language to write the script.  Just making the general layout and n
 What is up so far
 ------------------
 Right now:
-# Some ideas thrown together for JSON for config files.
-# Sample page for video HTML tag.
-# Sample page for player window using blaze.min.css.
+* Some ideas thrown together for JSON for config files.
+* Sample page for video HTML tag.
+* Sample page for player window using blaze.min.css.
