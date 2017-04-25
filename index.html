@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Simple Moovie Site</title>
-	<meta name="description" content="Simple statically built site to naviate and play movies.">
+	<meta name="description" content="Simple statically built site to navigate and play movies.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -31,146 +31,169 @@
 <nav class="c-nav c-nav--inline">
 	<a href="./" class="c-nav__item c-text--loud">Movie Site</a>
 	<a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-user"></i> Logout</a>
-	<a href="#" class="c-nav__item c-nav__item--right" onclick="can I get another div to unhide"><i class="fa fa-life-ring"></i> Help</a>
+	<a href="#" class="c-nav__item c-nav__item--right" onclick="can I get another div id="divModalWindowAbout" to unhide?"><i class="fa fa-life-ring"></i> About</a>
 	<a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-sliders"></i> Settings</a>
 	<a href="./" class="c-nav__item c-nav__item--right"><i class="fa fa-home"></i> Home</a>
 </nav>
 <div class="o-grid o-panel o-panel--nav-top">
 	<div class="o-grid__cell--width-15 o-grid__cell--hidden o-grid__cell--visible@large o-panel-container">
 		<nav class="c-nav c-nav--light o-panel">
-			<div class="c-nav__item"><a href="#" class="c-nav__item c-nav__item--right"> Back</a></div>
-			<div class="c-nav__item"><a href="#" class="c-nav__item c-nav__item--right"> Genre Tags</a></div>
-			<div class="c-nav__item"><a href="#" class="c-nav__item c-nav__item--right"> General Tags</a></div>
-			<div class="c-nav__item"><a href="#" class="c-nav__item c-nav__item--right"> Name</a></div>
+			<!-- <div class="c-nav__item"><a href="#" class="c-nav__item c-nav__item--right"> Back</a></div> -->
+			<div class="c-card c-card--accordion u-high">
+  			<input type="checkbox" id="accordion-1">
+  			<label class="c-card__item" for="accordion-1">By Name</label>
+  			<div class="c-card__item">
+					<div class="c-card c-card--accordion u-high">
+						<input type="checkbox" id="accordion-1-1">
+						<label class="c-card__item" for="accordion-1-1">A</label>
+						<div class="c-card__item" for="accordion-1-1">
+							A Movie Set 01
+							<br/>
+							A Movie Set 02
+						</div>
+						<input type="checkbox" id="accordion-1-2">
+						<label class="c-card__item" for="accordion-1-2">B</label>
+						<div class="c-card__item">B Movie Set 01</div>
+					</div>
+				</div>
+  			<input type="checkbox" id="accordion-2">
+  			<label class="c-card__item" for="accordion-2">Genre Tags</label>
+  			<div class="c-card__item">Pane 2</div>
+  			<input type="checkbox" id="accordion-3">
+  			<label class="c-card__item" for="accordion-3">General Tags</label>
+  			<div class="c-card__item">Pane 2</div>
+			</div>
 		</nav>
 	</div>
 	<main class="o-grid__cell o-grid__cell--width-85@large o-panel-container">
 		<div class="o-grid o-grid--wrap o-panel">
 			<div class="o-grid__cell o-grid__cell--width-100"></div>
-			<div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-60@large">
+			<div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-65@medium">
 				<div class="c-card u-high">
   				<div class="c-card__item c-card__item--brand">Put Movie Title Here</div>
   				<div class="c-card__item">
-						<video width="750" height="350" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
-				  		<source src="video_content/movie+set+02/mvset2-sample07.mkv" type="video/mp4">
+						<video width="832" height="468" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
+				  		<source src="video_content/B/b+movie+set+02/mvset2-sample07.mkv" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>
   				</div>
 				</div>
 			</div>
-			<div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-40@large">
-				<h3 class="c-heading c-heading--medium">Next Video:</h3>
-				<div class="o-container o-container--xsmall">
+			<div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-35@medium">
+				<div class="o-container o-container--small">
 					<div class="c-card u-high">
-  					<div class="c-card__item c-card__item--brand">Movie Title Here</div>
-  					<div class="c-card__item">
-							<center><video width="300" height="220" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
-  							<source src="video_content/movie+set+02/mvset2-sample01.mp4" type="video/mp4">
-						  	Your browser does not support the video tag.
-							</video></center>
-  					</div>
+  					<div class="c-card__item c-card__item--brand">Movies in folder/tag:</div>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 01 - The one where Underdog gets away.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 02 - The one where Jack did something stupid.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 03 - The one where Gilligan messed up the plan.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 04 - The one where Spock comes up with an idea for Scotty.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 05 - The one where Underdog gets away.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 06 - The one where Jack did something stupid.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 07 - The one where Gilligan messed up the plan.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 08 - The one where Spock comes up with an idea for Scotty.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 09 - The one where Underdog gets away.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 10 - The one where Jack did something stupid.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 11 - The one where Gilligan messed up the plan.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 12 - The one where Spock comes up with an idea for Scotty.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 13 - The one where Underdog gets away.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 14 - The one where Jack did something stupid.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 15 - The one where Gilligan messed up the plan.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 16 - The one where Spock comes up with an idea for Scotty.</span>
+						<br/>
+						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 17 - The one where Underdog gets away.</span>
+						<div class="c-pagination">
+						  <div class="c-pagination__controls c-pagination__controls--backward">
+						    <button class="c-pagination__control">«</button>
+						    <button class="c-pagination__control">‹</button>
+						  </div>
+						  <div class="c-pagination__controls">
+						    <span class="c-pagination__ellipsis">…</span>
+						    <button class="c-pagination__page">4</button>
+						    <button class="c-pagination__page c-pagination__page--current">5</button>
+						    <button class="c-pagination__page">6</button>
+						    <span class="c-pagination__ellipsis">…</span>
+						  </div>
+						  <div class="c-pagination__controls c-pagination__controls--forward">
+						    <button class="c-pagination__control">›</button>
+						    <button class="c-pagination__control">»</button>
+						  </div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="o-grid__cell o-grid__cell--width-100 t-secondary">
 				<div class="o-grid o-grid--wrap">
 					<div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@large">
-						<h3 class="c-heading c-heading--small">Tags on movie:</h3>
-						<div class="c-card t-demo">
-							<div class="c-card__item">
-								<p class="c-paragraph c-text--loud">Genre Tags</p>
-								<p class="c-paragraph">All the tags related to genres.</p>
-							</div>
+						<div class="c-card u-high">
+  						<div class="c-card__item c-card__item--brand">Genre tags on movie:</div>
+  						<div class="c-card__item">
+								Tags, Tags, Tags
+  						</div>
 						</div>
-						<div class="c-card t-demo">
-							<div class="c-card__item">
-								<p class="c-paragraph c-text--loud">Generic Tags</p>
-								<p class="c-paragraph">All the tages that are not related to genres.</p>
-							</div>
+						<div class="c-card u-high">
+  						<div class="c-card__item c-card__item--brand">General tags on movie:</div>
+  						<div class="c-card__item">
+								Tags, Tags, Tags
+  						</div>
 						</div>
 					</div>
-					<div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-66@large">
-						<h3 class="c-heading c-heading--small">Movies in group:</h3>
-							<div class="c-alert c-alert--info">
-								Episode 33 - The one where Jack did something stupid.
-							</div>
-							<div class="c-alert c-alert--info">
-								Episode 34 - The one where Gilligan messed up the plan.
-							</div>
-							<div class="c-alert c-alert--info">
-								Episode 35 - The one where Spock comes up with an idea for Scotty.
-							</div>
+					<div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@large">
+						<div class="c-card u-high">
+  						<div class="c-card__item c-card__item--brand">Previous movie:</div>
+  						<div class="c-card__item">
+								<center><video width="300" height="220" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
+  								<source src="video_content/B/b+movie+set+02/mvset2-sample01.mp4" type="video/mp4">
+						  		Your browser does not support the video tag.
+								</video></center>
+  						</div>
+						</div>
+					</div>
+					<div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@large">
+						<div class="c-card u-high">
+  						<div class="c-card__item c-card__item--brand">Next movie:</div>
+  						<div class="c-card__item">
+								<center><video width="300" height="220" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
+  								<source src="video_content/B/b+movie+set+02/mvset2-sample01.mp4" type="video/mp4">
+						  		Your browser does not support the video tag.
+								</video></center>
+  						</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</main>
-	<div id="divHelpModalWindow" style="display: none;">
-		<div class="c-card c-card--higher">
-  		<header class="c-card__header">
-    		<h2 class="c-heading">
-      		Heading
-      		<div class="c-heading__sub">Sub-heading</div>
-    		</h2>
-  		</header>
-  		<div class="c-card__body">
-    		<p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
-  		</div>
-  		<footer class="c-card__footer c-card__footer--block">
-    		<div class="c-input-group">
-      		<button class="c-button c-button--block c-button--brand">Button</button>
-      		<button class="c-button c-button--block c-button--info">Button</button>
+	<div id="divModalWindowAbout" style="display: none;">
+		<div class="c-overlay"></div>
+		<div class="o-modal u-highest">
+  		<div class="c-card">
+    		<header class="c-card__header">
+      		<button type="button" class="c-button c-button--close">×</button>
+      		<h2 class="c-heading">Modal heading</h2>
+    		</header>
+    		<div class="c-card__body">
+      		This is the modal body
     		</div>
-  		</footer>
+    		<footer class="c-card__footer">
+      		<button type="button" class="c-button c-button--brand">Close</button>
+    		</footer>
+  		</div>
 		</div>
 	</div>
 </body>
 </html>
-
-
-
-
-
-
-<!--
-					<video width="320" height="240" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
-  					<source src="video_content/movie+set+02/mvset2-sample01.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-					<video width="320" height="240" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
-  					<source src="video_content/movie+set+02/mvset2-sample02.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-					<video width="320" height="240" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
-  					<source src="video_content/movie+set+02/mvset2-sample03.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-					<video width="320" height="240" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
-  					<source src="video_content/movie+set+02/mvset2-sample04.mkv" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-					<video width="320" height="240" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
-  					<source src="video_content/movie+set+02/mvset2-sample05.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-					<video width="320" height="240" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
-  					<source src="video_content/movie+set+02/mvset2-sample06.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-					<video width="320" height="240" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
-  					<source src="video_content/movie+set+02/mvset2-sample07.mkv" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-					<video width="320" height="240" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
-  					<source src="video_content/movie+set+02/mvset2-sample08.webm" type="video/webm">
-						Your browser does not support the video tag.
-					</video>
-					<video width="320" height="240" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
-  					<source src="video_content/movie+set+02/mvset2-sample09.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-					<video width="320" height="240" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
-  					<source src="video_content/movie+set+02/mvset2-sample10.ogv" type="video/ogg">
-						Your browser does not support the video tag.
-					</video>
--->
