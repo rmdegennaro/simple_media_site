@@ -31,7 +31,7 @@
 <nav class="c-nav c-nav--inline">
 	<a href="./" class="c-nav__item c-text--loud">Movie Site</a>
 	<a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-user"></i> Logout</a>
-	<a href="#" class="c-nav__item c-nav__item--right" onclick="can I get another div id="divModalWindowAbout" to unhide?"><i class="fa fa-life-ring"></i> About</a>
+	<a href="#" class="c-nav__item c-nav__item--right" onclick="[[get div id="divModalWindowAbout" to unhide?]]"><i class="fa fa-life-ring"></i> About</a>
 	<a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-sliders"></i> Settings</a>
 	<a href="./" class="c-nav__item c-nav__item--right"><i class="fa fa-home"></i> Home</a>
 </nav>
@@ -156,7 +156,7 @@
 						<div class="c-card u-high">
   						<div class="c-card__item c-card__item--brand">Previous movie:</div>
   						<div class="c-card__item">
-								<center><video width="300" height="220" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
+								<center><video width="300" height="220" preload="metadata" onclick="[[do something to make this video play]]">
   								<source src="video_content/B/b+movie+set+02/mvset2-sample01.mp4" type="video/mp4">
 						  		Your browser does not support the video tag.
 								</video></center>
@@ -167,7 +167,7 @@
 						<div class="c-card u-high">
   						<div class="c-card__item c-card__item--brand">Next movie:</div>
   						<div class="c-card__item">
-								<center><video width="300" height="220" controls preload="metadata" onclick="this.paused ? this.play() : this.pause();">
+								<center><video width="300" height="220" preload="metadata" onclick="[[do something to make this video play]]">
   								<source src="video_content/B/b+movie+set+02/mvset2-sample01.mp4" type="video/mp4">
 						  		Your browser does not support the video tag.
 								</video></center>
@@ -178,8 +178,8 @@
 			</div>
 		</div>
 	</main>
-	<div id="divModalWindowAbout" style="display: none;">
-		<div class="c-overlay"></div>
+	<div id="divModalWindowAbout" style="display: none;" onclick="[[get self to hide]]">
+		<div class="c-overlay--dismissable"></div>
 		<div class="o-modal u-highest">
   		<div class="c-card">
     		<header class="c-card__header">
