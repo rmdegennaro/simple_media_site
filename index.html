@@ -30,38 +30,60 @@
 </style>
 <nav class="c-nav c-nav--inline">
 	<a href="./" class="c-nav__item c-text--loud">Movie Site</a>
-	<a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-user"></i> Logout</a>
-	<a href="#" class="c-nav__item c-nav__item--right" onclick="[[get div id="divModalWindowAbout" to unhide?]]"><i class="fa fa-life-ring"></i> About</a>
-	<a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-sliders"></i> Settings</a>
+	<a href="#" class="c-nav__item c-nav__item--right" onclick="divModalWindowLogout.style.display='block'"><i class="fa fa-user"></i> Logout</a>
+	<a href="#" class="c-nav__item c-nav__item--right" onclick="divModalWindowAbout.style.display='block'"><i class="fa fa-life-ring"></i> About</a>
+	<a href="#" class="c-nav__item c-nav__item--right"onclick="divModalWindowSettings.style.display='block'"><i class="fa fa-sliders"></i> Settings</a>
 	<a href="./" class="c-nav__item c-nav__item--right"><i class="fa fa-home"></i> Home</a>
 </nav>
 <div class="o-grid o-panel o-panel--nav-top">
 	<div class="o-grid__cell--width-15 o-grid__cell--hidden o-grid__cell--visible@large o-panel-container">
 		<nav class="c-nav c-nav--light o-panel">
-			<!-- <div class="c-nav__item"><a href="#" class="c-nav__item c-nav__item--right"> Back</a></div> -->
 			<div class="c-card c-card--accordion u-high">
-  			<input type="checkbox" id="accordion-1">
-  			<label class="c-card__item" for="accordion-1">By Name</label>
+				<!-- By Name selection -->
+  			<input type="checkbox" id="accordion-byname">
+  			<label class="c-card__item" for="accordion-byname">By Name</label>
   			<div class="c-card__item">
 					<div class="c-card c-card--accordion u-high">
-						<input type="checkbox" id="accordion-1-1">
-						<label class="c-card__item" for="accordion-1-1">A</label>
-						<div class="c-card__item" for="accordion-1-1">
+						<input type="checkbox" id="accordion-byname-a">
+						<label class="c-card__item" for="accordion-byname-a">A</label>
+						<div class="c-card__item" for="accordion-byname-a">
 							A Movie Set 01
 							<br/>
 							A Movie Set 02
 						</div>
-						<input type="checkbox" id="accordion-1-2">
-						<label class="c-card__item" for="accordion-1-2">B</label>
+						<input type="checkbox" id="accordion-byname-b">
+						<label class="c-card__item" for="accordion-byname-b">B</label>
 						<div class="c-card__item">B Movie Set 01</div>
 					</div>
 				</div>
-  			<input type="checkbox" id="accordion-2">
-  			<label class="c-card__item" for="accordion-2">Genre Tags</label>
-  			<div class="c-card__item">Pane 2</div>
-  			<input type="checkbox" id="accordion-3">
-  			<label class="c-card__item" for="accordion-3">General Tags</label>
-  			<div class="c-card__item">Pane 2</div>
+				<!-- By Actor selection -->
+				<div class="c-card__divider"></div>
+  			<input type="checkbox" id="accordion-byactor">
+  			<label class="c-card__item" for="accordion-byactor">By Actor</label>
+  			<div class="c-card__item">
+					<div class="c-card c-card--accordion u-high">
+						<input type="checkbox" id="accordion-byactor-a">
+						<label class="c-card__item" for="accordion-byactor-a">A</label>
+						<div class="c-card__item" for="accordion-byactor-a">
+							Al Pacina
+							<br/>
+							Antonio Banderas
+						</div>
+						<input type="checkbox" id="accordion-byactor-b">
+						<label class="c-card__item" for="accordion-byactor-b">B</label>
+						<div class="c-card__item">Brad Pitt</div>
+					</div>
+				</div>
+				<!-- Genre Tag selection -->
+				<div class="c-card__divider"></div>
+  			<input type="checkbox" id="accordion-genre">
+  			<label class="c-card__item" for="accordion-genre">Genre Tags</label>
+  			<div class="c-card__item">Tags, Tags, Tags</div>
+				<!-- General Tag selection -->
+				<div class="c-card__divider"></div>
+  			<input type="checkbox" id="accordion-general">
+  			<label class="c-card__item" for="accordion-general">General Tags</label>
+  			<div class="c-card__item">Tags, Tags, Tags</div>
 			</div>
 		</nav>
 	</div>
@@ -91,7 +113,7 @@
 						<br/>
 						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 04 - The one where Spock comes up with an idea for Scotty.</span>
 						<br/>
-						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 05 - The one where Underdog gets away.</span>
+						<span class="c-badge c-badge--rounded c-badge--brand">Episode 05 - The one where I'm watching it right now.</span>
 						<br/>
 						<span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">Episode 06 - The one where Jack did something stupid.</span>
 						<br/>
@@ -178,19 +200,55 @@
 			</div>
 		</div>
 	</main>
+	<div id="divModalWindowSettings" style="display: none;" onclick="[[get self to hide]]">
+		<div class="c-overlay--dismissable"></div>
+		<div class="o-modal u-highest">
+  		<div class="c-card">
+    		<header class="c-card__header">
+      		<button type="button" class="c-button c-button--close" onclick="divModalWindowSettings.style.display='none'">×</button>
+      		<h2 class="c-heading">About</h2>
+    		</header>
+    		<div class="c-card__body">
+      		There is no login, so where do you save settings?  :-/
+    		</div>
+    		<footer class="c-card__footer">
+      		<button type="button" class="c-button c-button--brand" onclick="divModalWindowSettings.style.display='none'">Close</button>
+    		</footer>
+  		</div>
+		</div>
+	</div>
 	<div id="divModalWindowAbout" style="display: none;" onclick="[[get self to hide]]">
 		<div class="c-overlay--dismissable"></div>
 		<div class="o-modal u-highest">
   		<div class="c-card">
     		<header class="c-card__header">
-      		<button type="button" class="c-button c-button--close">×</button>
-      		<h2 class="c-heading">Modal heading</h2>
+      		<button type="button" class="c-button c-button--close" onclick="divModalWindowAbout.style.display='none'">×</button>
+      		<h2 class="c-heading">About</h2>
     		</header>
     		<div class="c-card__body">
-      		This is the modal body
+      		This site was created by a script and is attempting to be simple and self-contained.
+					<br/>
+					For additional information, please check out <a href="https://github.com/rmdegennaro/simple_movie_site" target="_blank">my project</a> that created it.
     		</div>
     		<footer class="c-card__footer">
-      		<button type="button" class="c-button c-button--brand">Close</button>
+      		<button type="button" class="c-button c-button--brand" onclick="divModalWindowAbout.style.display='none'">Close</button>
+    		</footer>
+  		</div>
+		</div>
+	</div>
+	<div id="divModalWindowLogout" style="display: none;" onclick="[[can I get whole div to hide when clicking self?]]">
+		<div class="c-overlay--dismissable"></div>
+		<div class="o-modal u-highest">
+  		<div class="c-card">
+    		<header class="c-card__header">
+      		<button type="button" class="c-button c-button--close" onclick="divModalWindowLogout.style.display='none'">×</button>
+      		<h2 class="c-heading">Logout</h2>
+    		</header>
+    		<div class="c-card__body">
+      		There is no login, so why is there a logout?  :-)
+    		</div>
+    		<footer class="c-card__footer">
+      		<button type="button" class="c-button c-button--brand" onclick="divModalWindowLogout.style.display='none'">Close</button>
     		</footer>
   		</div>
 		</div>
