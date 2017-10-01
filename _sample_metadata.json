@@ -1,14 +1,16 @@
-{ "displayname":"Some High Level Folder"
-  , "tags":[ "Folder Tag 1", "Folder Tag 2", "Folder Tag 3" ]
-
+{ "category":"TV"
   , "mvset3-sample01.mkv": [
     {"displayname": "Sample Movie 01 from Movie Set 3"
      , "tags":[ "Movie Tag 1", "Movie Tag 2", "Movie Tag 3" ]
-    }
+     , "series_name": ""
+     , "series_order": ""
+   }
   ]
   , "mvset3-sample02.mkv": [
     {"displayname": "Sample Movie 02 from Movie Set 3"
      , "tags":[ "Movie Tag 1", "Movie Tag 2", "Movie Tag 3" ]
+     , "series_name": "The Dudes"
+     , "series_order": "4"
     }
   ]
 }

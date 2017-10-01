@@ -1,0 +1,162 @@
+{ "./A/Austin Powers/Austin Powers Goldmember.mp4": [
+    {"displayname": "Austin Powers in Goldmember"
+     , "genre tags":[ "Comedy", "Action" ]
+     , "general tags":[ "SNL Related", "Parodies" ]
+     , "actor tags":[ "Mike Myers", "Seth Green" ]
+     , "series_name": "Austin Powers"
+     , "series_order": "3"
+   }
+  ]
+  , "./A/Austin Powers/Austin Powers International Man of Mystery.mp4": [
+    {"displayname": "Austin Powers: International Man of Mystery"
+     , "genre tags":[ "Comedy", "Action" ]
+     , "general tags":[ "SNL Related", "Parodies" ]
+     , "actor tags":[ "Mike Myers", "Seth Green" ]
+     , "series_name": "Austin Powers"
+     , "series_order": "1"
+    }
+  ]
+  , "./A/Austin Powers/Austin Powers The Spy Who Shagged Me.mp4": [
+    {"displayname": "Austin Powers: The Spy Who Shagged Me"
+     , "genre tags":[ "Comedy", "Action" ]
+     , "general tags":[ "SNL Related", "Parodies" ]
+     , "actor tags":[ "Mike Myers", "Seth Green" ]
+     , "series_name": "Austin Powers"
+     , "series_order": "2"
+    }
+  ]
+  , "./A/About Last Night.mp4": [
+    {"displayname": "About Last Night"
+     , "genre tags":[ "Comedy", "Romance" ]
+     , "general tags":[ "80's Flicks" ]
+     , "actor tags":[ "Rob Lowe", "Demi Moore" ]
+    }
+  ]
+  , "./A/Above The Law.ogv": [
+    {"displayname": "Above The Law"
+     , "genre tags":[ "" ]
+     , "general tags":[ "" ]
+     , "actor tags":[ "" ]
+    }
+  ]
+  , "./A/Action Jackson.webm": [
+    {"displayname": "Action Jackson"
+     , "genre tags":[ "" ]
+     , "general tags":[ "" ]
+     , "actor tags":[ "" ]
+    }
+  ]
+  , "./A/Andromeda Strain.mkv": [
+    {"displayname": "Andromeda Strain"
+     , "genre tags":[ "" ]
+     , "general tags":[ "" ]
+     , "actor tags":[ "" ]
+    }
+  ]
+  , "./A/The Accidental Tourist.mkv": [
+    {"displayname": "The Accidental Tourist"
+     , "genre tags":[ "" ]
+     , "general tags":[ "" ]
+     , "actor tags":[ "" ]
+    }
+  ]
+  , "./B/b+movie+set+02": [
+    {"displayname": "mvset2-sample0"
+     , "genre tags":[ "" ]
+     , "general tags":[ "" ]
+     , "actor tags":[ "" ]
+     , "series_name": "b+movie+set+02"
+     , "series_order": ""
+    }
+  ]
+  , "./B/b+movie+set+02": [
+    {"displayname": "mvset2-sample0"
+     , "genre tags":[ "" ]
+     , "general tags":[ "" ]
+     , "actor tags":[ "" ]
+     , "series_name": "b+movie+set+02"
+     , "series_order": ""
+    }
+  ]
+  , "./B/b+movie+set+02": [
+    {"displayname": "mvset2-sample0"
+     , "genre tags":[ "" ]
+     , "general tags":[ "" ]
+     , "actor tags":[ "" ]
+     , "series_name": "b+movie+set+02"
+     , "series_order": ""
+    }
+  ]
+  , "./B/b+movie+set+02": [
+    {"displayname": "mvset2-sample0"
+     , "genre tags":[ "" ]
+     , "general tags":[ "" ]
+     , "actor tags":[ "" ]
+     , "series_name": "b+movie+set+02"
+     , "series_order": ""
+    }
+  ]
+  , "./B/b+movie+set+02": [
+    {"displayname": "mvset2-sample0"
+     , "genre tags":[ "" ]
+     , "general tags":[ "" ]
+     , "actor tags":[ "" ]
+     , "series_name": "b+movie+set+02"
+     , "series_order": ""
+    }
+  ]
+  , "./B/b+movie+set+02": [
+    {"displayname": "mvset2-sample0"
+     , "genre tags":[ "" ]
+     , "general tags":[ "" ]
+     , "actor tags":[ "" ]
+     , "series_name": "b+movie+set+02"
+     , "series_order": ""
+    }
+  ]
+  , "./B/b+movie+set+02": [
+    {"displayname": "mvset2-sample0"
+     , "genre tags":[ "" ]
+     , "general tags":[ "" ]
+     , "actor tags":[ "" ]
+     , "series_name": "b+movie+set+02"
+     , "series_order": ""
+    }
+  ]
+  , "./B/b+movie+set+02": [
+    {"displayname": "mvset2-sample0"
+     , "genre tags":[ "" ]
+     , "general tags":[ "" ]
+     , "actor tags":[ "" ]
+     , "series_name": "b+movie+set+02"
+     , "series_order": ""
+    }
+  ]
+  , "./B/b+movie+set+02": [
+    {"displayname": "mvset2-sample0"
+     , "genre tags":[ "" ]
+     , "general tags":[ "" ]
+     , "actor tags":[ "" ]
+     , "series_name": "b+movie+set+02"
+     , "series_order": ""
+    }
+  ]
+  , "./B/b+movie+set+02": [
+    {"displayname": "mvset2-sample0"
+     , "genre tags":[ "" ]
+     , "general tags":[ "" ]
+     , "actor tags":[ "" ]
+     , "series_name": "b+movie+set+02"
+     , "series_order": ""
+    }
+  ]
+  , "./B/b+movie+set+02": [
+    {"displayname": "mvset2-sample0"
+     , "genre tags":[ "" ]
+     , "general tags":[ "" ]
+     , "actor tags":[ "" ]
+     , "series_name": "b+movie+set+02"
+     , "series_order": ""
+    }
+  ]
+}
